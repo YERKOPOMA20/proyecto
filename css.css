@@ -1,0 +1,134 @@
+/* Reset básico */
+body, h1, h2, h3, h4, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #333;
+    padding: 1em 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('hero-bg.jpg') no-repeat center/cover;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #e63946;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.features, .products, .contact {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.feature, .product {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input, .contact textarea, .contact button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.icon {
+    color: #fff;
+    text-decoration: none;
+}
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 5px 10px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #e63946;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
